@@ -33,7 +33,6 @@
 ![Antes](img/antes.png)
 ![Depois](img/depois.png)
 
-> Substituam essas duas imagens pelos prints reais da conversa de vocês com a IA: um print da primeira versão da `index.html` e um da versão final, salvos em `img/antes.png` e `img/depois.png`.
 
 ## Os 4 prompts que mais fizeram diferença
 
