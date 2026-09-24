@@ -1,7 +1,8 @@
 # Trap In Unasp
 
 **Dupla:** Gustavo Martinez e Alexandre .A
-**Site publicado:** _cole aqui o link da Vercel depois do deploy_
+**Site publicado:**
+(https://marciu-ia-alexandre-a-e-gustavo-m.vercel.app)
 
 ## Briefing
 
