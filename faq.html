@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dúvidas e contato — TRAP IN UNASP</title>
+<meta name="description" content="Perguntas frequentes sobre o TRAP IN UNASP e formulário de contato com a organização.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="container">
+    <a href="index.html" class="marca" aria-label="TRAP IN UNASP — página inicial">
+      <img src="img/logo.svg" alt="TRAP IN UNASP">
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+    <nav>
+      <ul class="menu" id="menu-principal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="lineup.html">Line-up</a></li>
+        <li><a href="ingressos.html">Ingressos</a></li>
+        <li><a href="informacoes.html">Informações</a></li>
+        <li><a href="faq.html" aria-current="page">Dúvidas</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="secao">
+    <div class="container">
+      <div class="secao-titulo">
+        <h1 style="font-size: clamp(2.2rem, 5vw, 3.4rem);">Dúvidas frequentes</h1>
+        <span>ainda ficou com alguma?</span>
+      </div>
+
+      <div class="faq-lista">
+
+        <div class="faq-item">
+          <button class="faq-pergunta">
+            O ingresso dá acesso aos 3 dias ou só a 1 dia?
+            <span class="sinal">+</span>
+          </button>
+          <div class="faq-resposta">
+            <p>Todos os ingressos do TRAP IN UNASP são passaporte completo: um único ingresso vale para as três noites, de 21 a 23 de dezembro. Não vendemos ingresso avulso por dia.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-pergunta">
+            Tem meia-entrada?
+            <span class="sinal">+</span>
+          </button>
+          <div class="faq-resposta">
+            <p>Sim. Estudantes com carteirinha válida, idosos e demais categorias previstas em lei têm direito a meia-entrada, mediante apresentação do documento na entrada do festival.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-pergunta">
+            Posso entrar e sair do festival no mesmo dia?
+            <span class="sinal">+</span>
+          </button>
+          <div class="faq-resposta">
+            <p>Sim, o ingresso permite reentrada no mesmo dia. Basta apresentar a pulseira do evento e um documento com foto na saída e no retorno.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-pergunta">
+            Qual a idade mínima para entrar?
+            <span class="sinal">+</span>
+          </button>
+          <div class="faq-resposta">
+            <p>O TRAP IN UNASP é livre para todas as idades. Menores de 16 anos precisam estar acompanhados de um responsável legal durante todo o evento.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-pergunta">
+            Como funciona o guarda-volumes?
+            <span class="sinal">+</span>
+          </button>
+          <div class="faq-resposta">
+            <p>O guarda-volumes fica na entrada principal, próximo ao Palco Sertão. É gratuito para quem tem ingresso Rio ou Beira-Rio VIP e pago à parte para o ingresso Sertão.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-pergunta">
+            E se chover durante o festival?
+            <span class="sinal">+</span>
+          </button>
+          <div class="faq-resposta">
+            <p>Dezembro é período seco em Xique-Xique, mas o festival acontece com chuva leve. Em caso de tempestade, a organização pode pausar temporariamente os shows por segurança, sem reembolso do ingresso.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 style="margin-top: 80px;">Fale com a gente</h2>
+      <p style="opacity:0.8;">Dúvida que não está na lista? Manda pra gente pelo formulário abaixo.</p>
+
+      <form class="contato-form" onsubmit="return false;">
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+        </div>
+        <div class="campo">
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" name="assunto" placeholder="Sobre o que você quer falar?">
+        </div>
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui"></textarea>
+        </div>
+        <button type="submit" class="botao botao-primario">Enviar mensagem</button>
+        <p class="form-aviso">Formulário apenas ilustrativo para esta atividade — o envio não é funcional.</p>
+      </form>
+
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <p><strong>TRAP IN UNASP</strong> — Festival de Trap · 2026</p>
+    <p>Criado por Gustavo Martinez e Alexandre A.</p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('menu-principal');
+  toggle.addEventListener('click', () => {
+    const aberto = menu.classList.toggle('aberto');
+    toggle.setAttribute('aria-expanded', aberto);
+  });
+
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const pergunta = item.querySelector('.faq-pergunta');
+    pergunta.addEventListener('click', () => {
+      const jaAberto = item.classList.contains('aberto');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('aberto');
+        i.querySelector('.sinal').textContent = '+';
+      });
+      if (!jaAberto){
+        item.classList.add('aberto');
+        item.querySelector('.sinal').textContent = '–';
+      }
+    });
+  });
+</script>
+</body>
+</html>

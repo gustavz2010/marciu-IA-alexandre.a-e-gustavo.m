@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    
+    <pattern id="herodots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="7.0" cy="7.0" r="1.4" fill="#C8FF3D" opacity="0.55"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="600" fill="#0B0B0C"/>
+  <rect width="1200" height="600" fill="url(#herodots)" opacity="0.45"/>
+  <path d="M0,600 L0,470 Q300,410 600,460 T1200,440 L1200,600 Z" fill="#A9895C" opacity="0.55"/>
+  <path d="M0,600 L0,520 Q320,480 640,530 T1200,500 L1200,600 Z" fill="#C1432B" opacity="0.9"/>
+</svg>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informações — TRAP IN UNASP</title>
+<meta name="description" content="Endereço, como chegar e regras do TRAP IN UNASP, em Xique-Xique (BA).">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="container">
+    <a href="index.html" class="marca" aria-label="TRAP IN UNASP — página inicial">
+      <img src="img/logo.svg" alt="TRAP IN UNASP">
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+    <nav>
+      <ul class="menu" id="menu-principal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="lineup.html">Line-up</a></li>
+        <li><a href="ingressos.html">Ingressos</a></li>
+        <li><a href="informacoes.html" aria-current="page">Informações</a></li>
+        <li><a href="faq.html">Dúvidas</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="secao">
+    <div class="container">
+      <div class="secao-titulo">
+        <h1 style="font-size: clamp(2.2rem, 5vw, 3.4rem);">Informações</h1>
+        <span>como chegar</span>
+      </div>
+
+      <div class="info-grade">
+        <div>
+          <dl class="info-lista">
+            <dt>Endereço</dt>
+            <dd>Campus Unasp Xique-Xique — Av. Beira Rio, s/n, Xique-Xique/BA</dd>
+
+            <dt>De carro</dt>
+            <dd>Acesso pela BR-242. Estacionamento aberto a partir das 17h, R$ 25 a diária.</dd>
+
+            <dt>De ônibus</dt>
+            <dd>Linhas extras saem da Rodoviária de Xique-Xique a cada 30 min, das 18h à 1h.</dd>
+
+            <dt>De barco</dt>
+            <dd>Travessia especial pelo Rio São Francisco saindo do Porto Central, a cada 20 min.</dd>
+
+            <dt>Check-in</dt>
+            <dd>Portões abrem às 18h. Leve documento com foto — o nome no ingresso precisa bater com o documento.</dd>
+          </dl>
+        </div>
+
+        <div class="mapa-caixa">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-42.8247%2C-10.8758%2C-42.6247%2C-10.7758&layer=mapnik&marker=-10.8258%2C-42.7247"
+            style="width:100%; height:340px; border:0; display:block;"
+            loading="lazy"
+            title="Mapa de Xique-Xique, Bahia — localização do TRAP IN UNASP">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="regras">
+        <div class="regras-coluna pode">
+          <h3>Pode levar</h3>
+          <ul>
+            <li>Documento de identificação original</li>
+            <li>Squeeze ou garrafa reutilizável vazia</li>
+            <li>Protetor solar e boné ou chapéu</li>
+            <li>Câmera fotográfica amadora (sem tripé)</li>
+            <li>Capa de chuva</li>
+          </ul>
+        </div>
+        <div class="regras-coluna nao-pode">
+          <h3>Não pode levar</h3>
+          <ul>
+            <li>Bebida alcoólica ou de qualquer outra origem</li>
+            <li>Embalagens de vidro ou isopor</li>
+            <li>Drones sem autorização prévia da organização</li>
+            <li>Armas ou objetos cortantes</li>
+            <li>Animais, exceto cães-guia</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <p><strong>TRAP IN UNASP</strong> — Festival de Trap · 2026</p>
+    <p>Criado por Gustavo Martinez e Alexandre A.</p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('menu-principal');
+  toggle.addEventListener('click', () => {
+    const aberto = menu.classList.toggle('aberto');
+    toggle.setAttribute('aria-expanded', aberto);
+  });
+</script>
+</body>
+</html>

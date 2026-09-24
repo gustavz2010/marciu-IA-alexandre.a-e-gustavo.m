@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ingressos — TRAP IN UNASP</title>
+<meta name="description" content="Veja os tipos de ingresso do TRAP IN UNASP: Sertão, Rio e Beira-Rio VIP, com preços e o que está incluído.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="container">
+    <a href="index.html" class="marca" aria-label="TRAP IN UNASP — página inicial">
+      <img src="img/logo.svg" alt="TRAP IN UNASP">
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+    <nav>
+      <ul class="menu" id="menu-principal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="lineup.html">Line-up</a></li>
+        <li><a href="ingressos.html" aria-current="page">Ingressos</a></li>
+        <li><a href="informacoes.html">Informações</a></li>
+        <li><a href="faq.html">Dúvidas</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="secao">
+    <div class="container">
+      <div class="secao-titulo">
+        <h1 style="font-size: clamp(2.2rem, 5vw, 3.4rem);">Ingressos</h1>
+        <span>passaporte 3 dias</span>
+      </div>
+
+      <div class="ingressos-grade">
+
+        <div class="ingresso">
+          <p class="rotulo">Entrada padrão</p>
+          <h3>Sertão</h3>
+          <p class="preco">R$ 140<small> / 3 dias</small></p>
+          <ul>
+            <li>Acesso aos 3 dias de festival</li>
+            <li>Entrada nos dois palcos (Rio e Sertão)</li>
+            <li>Área de alimentação e food trucks</li>
+            <li>Guarda-volumes pago à parte</li>
+          </ul>
+          <a href="#" class="botao">Comprar Sertão</a>
+        </div>
+
+        <div class="ingresso destacado">
+          <p class="rotulo">Mais vendido</p>
+          <h3>Rio</h3>
+          <p class="preco">R$ 220<small> / 3 dias</small></p>
+          <ul>
+            <li>Tudo do ingresso Sertão</li>
+            <li>Fila prioritária de entrada</li>
+            <li>Setor mais próximo do Palco Rio</li>
+            <li>1 copo reutilizável do festival</li>
+            <li>Guarda-volumes incluso</li>
+          </ul>
+          <a href="#" class="botao botao-primario">Comprar Rio</a>
+        </div>
+
+        <div class="ingresso">
+          <p class="rotulo">Experiência completa</p>
+          <h3>Beira-Rio VIP</h3>
+          <p class="preco">R$ 380<small> / 3 dias</small></p>
+          <ul>
+            <li>Tudo do ingresso Rio</li>
+            <li>Camarote de frente pro Palco Rio</li>
+            <li>Open bar de água, isotônico e suco</li>
+            <li>Banheiro exclusivo climatizado</li>
+            <li>Estacionamento reservado</li>
+          </ul>
+          <a href="#" class="botao">Comprar VIP</a>
+        </div>
+
+      </div>
+
+      <p style="margin-top: 40px; opacity: 0.65; font-size: 0.85rem;">Ingressos meia-entrada disponíveis para estudantes mediante apresentação de carteirinha na entrada. Valores sujeitos a taxa de serviço.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <p><strong>TRAP IN UNASP</strong> — Festival de Trap · 2026</p>
+    <p>Criado por Gustavo Martinez e Alexandre. A 2</p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('menu-principal');
+  toggle.addEventListener('click', () => {
+    const aberto = menu.classList.toggle('aberto');
+    toggle.setAttribute('aria-expanded', aberto);
+  });
+</script>
+</body>
+</html>

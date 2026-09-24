@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRAP IN UNASP — 21 a 23 de dezembro, Xique-Xique (BA)</title>
+<meta name="description" content="TRAP IN UNASP é o festival de trap às margens do Rio São Francisco. Três dias no Campus Unasp de Xique-Xique (BA), de 21 a 23 de dezembro.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="container">
+    <a href="index.html" class="marca" aria-label="TRAP IN UNASP — página inicial">
+      <img src="img/logo.svg" alt="TRAP IN UNASP">
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+    <nav>
+      <ul class="menu" id="menu-principal">
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="lineup.html">Line-up</a></li>
+        <li><a href="ingressos.html">Ingressos</a></li>
+        <li><a href="informacoes.html">Informações</a></li>
+        <li><a href="faq.html">Dúvidas</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <img src="img/hero-textura.svg" alt="" class="hero-textura">
+    <div class="container hero-conteudo">
+      <p class="hero-data">21 · 22 · 23 DE DEZEMBRO — CAMPUS UNASP, XIQUE-XIQUE (BA)</p>
+      <h1>TRAP IN UNASP</h1>
+      <p class="hero-chamada">Três noites às margens do Rio São Francisco. O trap que toca em toda Bahia desce pro sertão com o line-up mais pesado que Xique-Xique já viu.</p>
+      <p class="hero-local">📍 Campus Unasp — Xique-Xique, Bahia</p>
+      <div style="margin-top: 28px; display:flex; gap:16px; flex-wrap:wrap;">
+        <a href="ingressos.html" class="botao botao-primario">Comprar ingresso</a>
+        <a href="lineup.html" class="botao">Ver line-up</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="container">
+      <div class="secao-titulo">
+        <h2>As três atrações principais</h2>
+        <span>não fica de fora</span>
+      </div>
+      <div class="destaques">
+        <div class="destaque">
+          <span class="numero">21 DEZ</span>
+          <h3>MATUÊ</h3>
+          <p>Abre o festival de virada pro sertão baiano. Show único, feito pra fechar o ano gritando.</p>
+        </div>
+        <div class="destaque">
+          <span class="numero">22 DEZ</span>
+          <h3>TETO</h3>
+          <p>Headliner da segunda noite. Beat pesado, palco pequeno, plateia colada.</p>
+        </div>
+        <div class="destaque">
+          <span class="numero">23 DEZ</span>
+          <h3>WIU</h3>
+          <p>Encerra o TRAP IN UNASP às margens do Rio São Francisco, virando a última madrugada do festival.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao secao-alt">
+    <div class="container" style="display:grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items:center;">
+      <div>
+        <h2>O trap que desceu pro rio</h2>
+        <p>Xique-Xique nunca teve um festival assim. O TRAP IN UNASP tira o trap da tela do celular e coloca ele no meio do sertão, de frente pro Rio São Francisco — poeira, calor de dezembro e o grave mais forte que já passou pela cidade.</p>
+        <p>Três dias, um palco só, artista perto de plateia. Sem VIP escondido atrás de tapume: quem paga o ingresso vê o show de verdade.</p>
+      </div>
+      <div>
+        <dl class="info-lista">
+          <dt>Onde</dt>
+          <dd>Campus Unasp, Xique-Xique — BA</dd>
+          <dt>Quando</dt>
+          <dd>21, 22 e 23 de dezembro de 2026 — a partir das 19h</dd>
+          <dt>Line-up</dt>
+          <dd>Matuê, Teto, Wiu, Brandao85, Yunk Vino, Alee, Veigh e Pastick e Cunha</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <p><strong>TRAP IN UNASP</strong> — Festival de Trap · 2026</p>
+    <p>Criado por Gustavo Martinez e Alexandre. A</p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('menu-principal');
+  toggle.addEventListener('click', () => {
+    const aberto = menu.classList.toggle('aberto');
+    toggle.setAttribute('aria-expanded', aberto);
+  });
+</script>
+</body>
+</html>

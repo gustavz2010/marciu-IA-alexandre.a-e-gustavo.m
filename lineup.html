@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Line-up — TRAP IN UNASP</title>
+<meta name="description" content="Confira os 8 artistas confirmados no TRAP IN UNASP, com dia, horário e palco de cada show.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="container">
+    <a href="index.html" class="marca" aria-label="TRAP IN UNASP — página inicial">
+      <img src="img/logo.svg" alt="TRAP IN UNASP">
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+    <nav>
+      <ul class="menu" id="menu-principal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="lineup.html" aria-current="page">Line-up</a></li>
+        <li><a href="ingressos.html">Ingressos</a></li>
+        <li><a href="informacoes.html">Informações</a></li>
+        <li><a href="faq.html">Dúvidas</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="secao">
+    <div class="container">
+      <div class="secao-titulo">
+        <h1 style="font-size: clamp(2.2rem, 5vw, 3.4rem);">Line-up completo</h1>
+        <span>8 shows em 3 noites</span>
+      </div>
+
+      <div class="lineup-grade">
+
+        <article class="artista">
+          <img src="img/matue.jpg" alt="Foto de MATUÊ, atração do TRAP IN UNASP">
+          <div class="artista-info">
+            <h3>Matuê</h3>
+            <div class="meta">
+              <span>21 de dezembro — Sáb.</span>
+              <span>22h30</span>
+              <span class="palco">Palco Rio</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artista">
+          <img src="img/teto.jpg" alt="Foto de Teto, atração do TRAP IN UNASP">
+          <div class="artista-info">
+            <h3>Teto</h3>
+            <div class="meta">
+              <span>22 de dezembro — Dom.</span>
+              <span>23h00</span>
+              <span class="palco">Palco Rio</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artista">
+          <img src="img/wiu.jpg" alt="Foto de Wiu, atração do TRAP IN UNASP">
+          <div class="artista-info">
+            <h3>Wiu</h3>
+            <div class="meta">
+              <span>23 de dezembro — Seg.</span>
+              <span>23h30</span>
+              <span class="palco">Palco Rio</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artista">
+          <img src="img/brandao85.jpg" alt="Foto de Brandao85, atração do TRAP IN UNASP">
+          <div class="artista-info">
+            <h3>Brandao85</h3>
+            <div class="meta">
+              <span>21 de dezembro — Sáb.</span>
+              <span>21h00</span>
+              <span class="palco">Palco Sertão</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artista">
+          <img src="img/yunk-vino.jpg" alt="Foto de Yunk Vino, atração do TRAP IN UNASP">
+          <div class="artista-info">
+            <h3>Yunk Vino</h3>
+            <div class="meta">
+              <span>22 de dezembro — Dom.</span>
+              <span>21h30</span>
+              <span class="palco">Palco Sertão</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artista">
+          <img src="img/alee.jpg" alt="Foto de Alee, atração do TRAP IN UNASP">
+          <div class="artista-info">
+            <h3>Alee</h3>
+            <div class="meta">
+              <span>23 de dezembro — Seg.</span>
+              <span>22h00</span>
+              <span class="palco">Palco Sertão</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artista">
+          <img src="img/veigh.jpg" alt="Foto de Veigh, atração do TRAP IN UNASP">
+          <div class="artista-info">
+            <h3>Veigh</h3>
+            <div class="meta">
+              <span>21 de dezembro — Sáb.</span>
+              <span>20h00</span>
+              <span class="palco">Palco Sertão</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="artista">
+          <img src="img/pastick-e-cunha.jpg" alt="Foto da dupla Pastick e Cunha, atração do TRAP IN UNASP">
+          <div class="artista-info">
+            <h3>Pastick e Cunha</h3>
+            <div class="meta">
+              <span>19h30 · Abertura</span>
+              <span>Todos os dias</span>
+              <span class="palco">Palco Sertão</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p style="margin-top: 40px; opacity: 0.65; font-size: 0.85rem;">Horários sujeitos a alteração. A ordem final de cada noite é confirmada 48h antes no @trapinunasp.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <p><strong>TRAP IN UNASP</strong> — Festival de Trap · 2026</p>
+    <p>Criado por Gustavo Martinez e Alexandre. A</p>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('menu-principal');
+  toggle.addEventListener('click', () => {
+    const aberto = menu.classList.toggle('aberto');
+    toggle.setAttribute('aria-expanded', aberto);
+  });
+</script>
+</body>
+</html>

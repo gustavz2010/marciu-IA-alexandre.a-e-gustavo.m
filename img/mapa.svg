@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420">
+  <rect width="900" height="420" fill="#EDEAE2"/>
+  <g stroke="#A9895C" stroke-width="3" opacity="0.35">
+    <line x1="0" y1="90" x2="900" y2="90"/>
+    <line x1="0" y1="190" x2="900" y2="190"/>
+    <line x1="0" y1="300" x2="900" y2="300"/>
+    <line x1="150" y1="0" x2="150" y2="420"/>
+    <line x1="430" y1="0" x2="430" y2="420"/>
+    <line x1="700" y1="0" x2="700" y2="420"/>
+  </g>
+  <path d="M0,60 C220,140 260,260 180,420" fill="none" stroke="#4C7FA1" stroke-width="26" opacity="0.55"/>
+  <path d="M20,360 L260,340 L420,220 L620,230 L760,150 L880,120" fill="none" stroke="#0B0B0C" stroke-width="6"/>
+  <path d="M20,360 L260,340 L420,220 L620,230 L760,150 L880,120" fill="none" stroke="#C1432B" stroke-width="3" stroke-dasharray="2 10"/>
+  <circle cx="620" cy="230" r="14" fill="#C1432B"/>
+  <polygon points="620,206 632,234 608,234" fill="#C1432B"/>
+  <text x="640" y="225" font-family="Arial, sans-serif" font-weight="900" font-size="20" fill="#0B0B0C">CAMPUS UNASP</text>
+  <text x="30" y="400" font-family="Arial, sans-serif" font-weight="700" font-size="15" fill="#0B0B0C" opacity="0.7">Rio São Francisco</text>
+</svg>
